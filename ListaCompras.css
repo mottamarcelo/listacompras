@@ -10,7 +10,7 @@ body{
     width: 100%;
     max-width: 450px;
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     padding: 25px 50px 2px 50px;
     border-radius: 8px;
 }
@@ -25,15 +25,19 @@ body{
 
 .topo input{
     width: 350px;
-    height: 25px;
+    height: 30px;
     border-radius: 8px;
     border: 1px solid black;
-    outline: none
+    padding: 4px 10px;
+    outline: none;
+    font-size: 15px;
 }
 
 .topo button{
     color: #696969;
-    border-radius: 8px;
+    border-radius: 100px;
+    height: 40px;
+    width: 40px;
     border: 1px solid black;
     outline: none
 }
@@ -41,9 +45,56 @@ body{
 .topo button:hover {
     color: black;
     background:#8FBC8F;
+    cursor: pointer;
 }
 
-.lista{
-    margin-top: 4px;
+.item{
+    display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+    font-weight: bold;
+    background: #808080;
+    max-width: 521px;
+    border-radius: 8px;
+    outline: none;
+    margin-bottom: 10px;
+    padding: 8px 15px;
+    align-items: center;
+}
+
+p{
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 450px;
+}
+
+.alterar {
+    color: #696969;
+    height:24px;
+    border-radius: 8px;
+    border: 1px solid black;
+    outline: none;
+}
+
+.alterar:hover {
+    color: black;
+    background: #e9ae61;
+    cursor: pointer;
+}
+
+.excluir {
+    color: #696969;
+    height:35px;
+    width: 35px;
+    border-radius: 100px;
+    border: 1px solid black;
+    outline: none;
+}
+
+.excluir:hover{
+    color: black;
+    background:#cf5f5f;
+    cursor: pointer;
 }
